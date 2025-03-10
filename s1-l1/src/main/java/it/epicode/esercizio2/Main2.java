@@ -6,8 +6,8 @@ public class Main2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Esercizio 2 - 1
-        System.out.println("---Esercizio 2-1---");
+        // Esercizio 2
+        System.out.println("---Esercizio 2---");
 
         String[] array = new String[3];
         System.out.println("Inserisci 3 parole");

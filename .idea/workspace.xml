@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e401cb6-6c5d-4f89-966d-1d5c0970b7c5" name="Changes" comment="commit 13/03">
-      <change afterPath="$PROJECT_DIR$/s1-l4/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="8e401cb6-6c5d-4f89-966d-1d5c0970b7c5" name="Changes" comment="commit 17/03" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +41,7 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Epicode/u4d4hw",
+    "last_opened_file_path": "D:/Epicode/Esercizi giornalieri Epicode/Esercizi_Java_Back-end",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -97,13 +91,22 @@
       <option name="project" value="LOCAL" />
       <updated>1741891221580</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit 17/03">
+      <option name="closed" value="true" />
+      <created>1742236807202</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742236807202</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit 11/03" />
     <MESSAGE value="commit 12/03" />
     <MESSAGE value="commit 13/03" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 13/03" />
+    <MESSAGE value="commit 17/03" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 17/03" />
   </component>
 </project>

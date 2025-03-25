@@ -14,23 +14,17 @@ public class Main {
 
     EventoDAO eventoDAO = new EventoDAO(em);
 
-    Evento evento = new Evento( "Evento1", LocalDate.now(), "Descrizione1", TipoEvento.PUBBLICO, 50);
-    Evento evento2 = new Evento( "Evento2", LocalDate.now(), "Descrizione2", TipoEvento.PRIVATO, 100);
-    Evento evento3 = new Evento( "Evento3", LocalDate.now(), "Descrizione3", TipoEvento.PUBBLICO, 120);
-    Evento evento4 = new Evento( "Evento4", LocalDate.now(), "Descrizione4", TipoEvento.PRIVATO, 85);
+    eventoDAO.save(new Evento( "Evento1", LocalDate.now(), "Descrizione1", TipoEvento.PUBBLICO, 50));
+    eventoDAO.save(new Evento( "Evento2", LocalDate.now(), "Descrizione2", TipoEvento.PRIVATO, 110));
+    eventoDAO.save(new Evento( "Evento3", LocalDate.now(), "Descrizione3", TipoEvento.PUBBLICO, 120));
+    eventoDAO.save(new Evento( "Evento4", LocalDate.now(), "Descrizione4", TipoEvento.PRIVATO, 85));
 
-    eventoDAO.save( evento );
-    eventoDAO.save( evento2 );
-    eventoDAO.save( evento3 );
-    eventoDAO.save( evento4 );
     eventoDAO.getById(1L);
 
-    eventoDAO.delete( evento4 );
+    eventoDAO.delete( eventoDAO.getById(4L) );
 
-
-
-        em.close();
-        emf.close();
+    em.close();
+    emf.close();
 }
 
 }

@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e401cb6-6c5d-4f89-966d-1d5c0970b7c5" name="Changes" comment="commit 24/03">
+    <list default="true" id="8e401cb6-6c5d-4f89-966d-1d5c0970b7c5" name="Changes" comment="commit 25/03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s3-l2/src/main/java/it/epicode/gestione_eventi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/s3-l2/src/main/java/it/epicode/gestione_eventi/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s3-l2/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/s3-l2/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Epicode/Esercizi giornalieri Epicode/Esercizi_Java_Back-end/s3-l1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Epicode/Esercizi giornalieri Epicode/Esercizi_Java_Back-end/s3-l2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -133,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742834901789</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit 25/03">
+      <option name="closed" value="true" />
+      <created>1742938429944</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742938429944</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -145,6 +155,7 @@
     <MESSAGE value="commit 19/03" />
     <MESSAGE value="commit 20/03" />
     <MESSAGE value="commit 24/03" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 24/03" />
+    <MESSAGE value="commit 25/03" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 25/03" />
   </component>
 </project>

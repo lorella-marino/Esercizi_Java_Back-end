@@ -1,4 +1,4 @@
-package it.epicode.gestione_eventi.evento;
+package it.epicode.gestione_eventi.eventi;
 
 import jakarta.persistence.*;
 import jakarta.persistence.GenerationType;

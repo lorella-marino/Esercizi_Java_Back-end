@@ -1,9 +1,9 @@
 package it.epicode.gestione_eventi;
 
 
-import it.epicode.gestione_eventi.evento.Evento;
-import it.epicode.gestione_eventi.evento.EventoDAO;
-import it.epicode.gestione_eventi.evento.TipoEvento;
+import it.epicode.gestione_eventi.eventi.Evento;
+import it.epicode.gestione_eventi.eventi.EventoDAO;
+import it.epicode.gestione_eventi.eventi.TipoEvento;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;

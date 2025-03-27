@@ -49,18 +49,20 @@ public class EventoDAO {
                 .getResultList();
     }
 
-    public List<PartitaDiCalcio> getPartiteVinteInCasa(String squadraDiCasa) {
+    public List<PartitaDiCalcio> getPartiteVinteInCasa(PartitaDiCalcio squadraDiCasa) {
         return em.createQuery("SELECT p FROM PartitaDiCalcio p WHERE p.squadraVincente = p.squadraDiCasa", PartitaDiCalcio.class)
                 .getResultList();
     }
 
-    public List<PartitaDiCalcio> getPartiteVinteInTrasferta(String squadraOspite) {
+    public List<PartitaDiCalcio> getPartiteVinteInTrasferta(PartitaDiCalcio squadraOspite) {
         return em.createQuery("SELECT p FROM PartitaDiCalcio p WHERE p.squadraVincente = p.squadraOspite", PartitaDiCalcio.class)
                 .getResultList();
     }
 
-    public List<PartitaDiCalcio> getPartitePareggiate() {
-        return em.createQuery("SELECT p FROM PartitaDiCalcio p WHERE p.squadraVincente = null", PartitaDiCalcio.class)
+    public List<PartitaDiCalcio> getPartitePareggiate(PartitaDiCalcio partitaDiCalcio) {
+        return em.createQuery("SELECT p FROM PartitaDiCalcio p WHERE p.squadraDiCasa = :squadraDiCasa AND p.squadraOspite = :squadraOspite AND p.squadraVincente IS NULL", PartitaDiCalcio.class)
+                .setParameter("squadraDiCasa", partitaDiCalcio.getSquadraDiCasa())
+                .setParameter("squadraOspite", partitaDiCalcio.getSquadraOspite())
                 .getResultList();
     }
 

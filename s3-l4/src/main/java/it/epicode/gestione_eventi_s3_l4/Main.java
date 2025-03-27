@@ -36,7 +36,7 @@ public class Main {
         Persona atleta = new Persona(null, "Luigi", "Verdi", "luigi.verdi@example.com", LocalDate.of(1995, 2, 2), Sesso.M, null, null, null);
 
         PartitaDiCalcio partita1 = new PartitaDiCalcio(null, "Partita di calcio 1", LocalDate.of(2021, 4, 15), "Descrizione 1", null, null, TipoEvento.PUBBLICO, 22, "Squadra di casa", "Squadra ospite", "Squadra vincente", 2, 1);
-        PartitaDiCalcio partita2 = new PartitaDiCalcio(null, "Partita di calcio 2", LocalDate.of(2022, 4, 15), "Descrizione 2", null, null, TipoEvento.PRIVATO, 50, "Squadra di casa", "Squadra ospite", null, 2, 1);
+        PartitaDiCalcio partita2 = new PartitaDiCalcio(null, "Partita di calcio 2", LocalDate.of(2022, 4, 15), "Descrizione 2", null, null, TipoEvento.PRIVATO, 50, "Squadra di casa", "Squadra ospite", null, 2, 2);
         PartitaDiCalcio partita3 = new PartitaDiCalcio(null, "Partita di calcio 3", LocalDate.of(2023, 4, 15), "Descrizione 3", null, null, TipoEvento.PUBBLICO, 32, "Squadra di casa", "Squadra ospite", "Squadra vincente", 2, 1);
 
         Concerto concerto1 = new Concerto(null, "Concerto 1", LocalDate.of(2024, 4, 15), "Descrizione 1", null, null, TipoEvento.PUBBLICO, 60, Genere.POP, true);
@@ -72,13 +72,13 @@ public class Main {
         List <Concerto> concertiPerGenere = eventoDAO.getConcertiPerGenere( Genere.POP );
         concertiPerGenere.forEach(System.out::println);
 
-        List <PartitaDiCalcio> partiteVinteInCasa = eventoDAO.getPartiteVinteInCasa( "Squadra di casa" );
+        List <PartitaDiCalcio> partiteVinteInCasa = eventoDAO.getPartiteVinteInCasa( partita1 );
         partiteVinteInCasa.forEach(System.out::println);
 
-        List <PartitaDiCalcio> partiteVinteInTrasferta = eventoDAO.getPartiteVinteInTrasferta( "Squadra ospite" );
+        List <PartitaDiCalcio> partiteVinteInTrasferta = eventoDAO.getPartiteVinteInTrasferta( partita3);
         partiteVinteInTrasferta.forEach(System.out::println);
 
-        List <PartitaDiCalcio> partitePareggiate = eventoDAO.getPartitePareggiate();
+        List <PartitaDiCalcio> partitePareggiate  = eventoDAO.getPartitePareggiate(partita1);
         partitePareggiate.forEach(System.out::println);
 
         List <GaraDiAtletica> gareDiAtleticaPerVincitore  = eventoDAO.getGareDiAtleticaPerVincitore( vincitore );

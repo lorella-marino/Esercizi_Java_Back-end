@@ -87,12 +87,11 @@ public class Main {
         List <GaraDiAtletica> gareDiAtleticaPerPartecipante  = eventoDAO.getGareDiAtleticaPerPartecipante( atleta );
         gareDiAtleticaPerPartecipante.forEach(System.out::println);
 
-        List <Evento> eventiSoldOut = eventoDAO.getEventiSoldOut();
+        List <Evento> eventiSoldOut = eventoDAO.getEventiSoldOut( 50 );
         eventiSoldOut.forEach(System.out::println);
 
-        List <Partecipazione> PartecipazioneDaConfermarePerEvento = eventoDAO.PartecipazioneDaConfermarePerEvento( 1L );
+        List <Partecipazione> PartecipazioneDaConfermarePerEvento = eventoDAO.PartecipazioneDaConfermarePerEvento ( partita1 );
         PartecipazioneDaConfermarePerEvento.forEach(System.out::println);
-
 
 
         em.close();

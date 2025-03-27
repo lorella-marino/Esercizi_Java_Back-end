@@ -76,14 +76,15 @@ public class EventoDAO {
                 .getResultList();
     }
 
-    public List<Evento> getEventiSoldOut() {
-        return em.createQuery("SELECT e FROM Evento e WHERE e.numeroMassimoPartecipanti = 0", Evento.class)
+    public List<Evento> getEventiSoldOut ( int numeroMassimoPartecipanti ) {
+        return em.createQuery("SELECT e FROM Evento e WHERE e.numeroMassimoPartecipanti = :numeroMassimoPartecipanti", Evento.class)
+                .setParameter("numeroMassimoPartecipanti", numeroMassimoPartecipanti)
                 .getResultList();
     }
 
-    public List<Partecipazione> PartecipazioneDaConfermarePerEvento(Long idEvento) {
-        return em.createQuery("SELECT p FROM Partecipazione p WHERE p.evento.id = :idEvento AND p.stato = 'DA_CONFERMARE'", Partecipazione.class)
-                .setParameter("idEvento", idEvento)
+    public List<Partecipazione> PartecipazioneDaConfermarePerEvento(Evento evento) {
+        return em.createQuery("SELECT p FROM Partecipazione p WHERE p.evento = :evento AND p.stato = 'DA_CONFERMARE'", Partecipazione.class)
+                .setParameter("evento", evento)
                 .getResultList();
     }
 

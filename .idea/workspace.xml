@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e401cb6-6c5d-4f89-966d-1d5c0970b7c5" name="Changes" comment="commit 26/03">
+    <list default="true" id="33244be2-ba04-4a8b-950b-9c774523c6c0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,10 +27,9 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2uAuRy736ylBtnCoJ765fRyKukg" />
+  <component name="ProjectId" id="2vOjjyYf673PYzeDVZQB4lH2WGX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,193 +38,19 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Epicode/Esercizi giornalieri Epicode/Esercizi_Java_Back-end/s3-l2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Esercizi_Java_Back-end" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Esercizi_Java_Back-end" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8e401cb6-6c5d-4f89-966d-1d5c0970b7c5" name="Changes" comment="" />
-      <created>1741703696260</created>
+      <changelist id="33244be2-ba04-4a8b-950b-9c774523c6c0" name="Changes" comment="" />
+      <created>1744023156487</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1741703696260</updated>
+      <updated>1744023156487</updated>
     </task>
-    <task id="LOCAL-00001" summary="commit 11/03">
-      <option name="closed" value="true" />
-      <created>1741707427091</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1741707427091</updated>
-    </task>
-    <task id="LOCAL-00002" summary="commit 12/03">
-      <option name="closed" value="true" />
-      <created>1741806680018</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1741806680018</updated>
-    </task>
-    <task id="LOCAL-00003" summary="commit 13/03">
-      <option name="closed" value="true" />
-      <created>1741891221580</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1741891221580</updated>
-    </task>
-    <task id="LOCAL-00004" summary="commit 17/03">
-      <option name="closed" value="true" />
-      <created>1742236807202</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1742236807202</updated>
-    </task>
-    <task id="LOCAL-00005" summary="commit 18/03">
-      <option name="closed" value="true" />
-      <created>1742319035333</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1742319035333</updated>
-    </task>
-    <task id="LOCAL-00006" summary="commit 19/03">
-      <option name="closed" value="true" />
-      <created>1742471197268</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1742471197268</updated>
-    </task>
-    <task id="LOCAL-00007" summary="commit 20/03">
-      <option name="closed" value="true" />
-      <created>1742500152455</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1742500152455</updated>
-    </task>
-    <task id="LOCAL-00008" summary="commit 24/03">
-      <option name="closed" value="true" />
-      <created>1742834901789</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1742834901789</updated>
-    </task>
-    <task id="LOCAL-00009" summary="commit 25/03">
-      <option name="closed" value="true" />
-      <created>1742938429944</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1742938429944</updated>
-    </task>
-    <task id="LOCAL-00010" summary="commit 25/03">
-      <option name="closed" value="true" />
-      <created>1742940348772</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1742940348772</updated>
-    </task>
-    <task id="LOCAL-00011" summary="commit 25/03">
-      <option name="closed" value="true" />
-      <created>1742940616764</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1742940616764</updated>
-    </task>
-    <task id="LOCAL-00012" summary="commit 25/03">
-      <option name="closed" value="true" />
-      <created>1742940743949</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1742940743949</updated>
-    </task>
-    <task id="LOCAL-00013" summary="commit 25/03">
-      <option name="closed" value="true" />
-      <created>1742941055237</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1742941055237</updated>
-    </task>
-    <task id="LOCAL-00014" summary="commit 25/03">
-      <option name="closed" value="true" />
-      <created>1742999414363</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1742999414363</updated>
-    </task>
-    <task id="LOCAL-00015" summary="commit 26/03">
-      <option name="closed" value="true" />
-      <created>1743009045760</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1743009045760</updated>
-    </task>
-    <task id="LOCAL-00016" summary="commit 26/03">
-      <option name="closed" value="true" />
-      <created>1743009124139</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1743009124140</updated>
-    </task>
-    <task id="LOCAL-00017" summary="commit 26/03">
-      <option name="closed" value="true" />
-      <created>1743009269879</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1743009269879</updated>
-    </task>
-    <task id="LOCAL-00018" summary="commit 25/03">
-      <option name="closed" value="true" />
-      <created>1743009476679</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1743009476679</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit 11/03" />
-    <MESSAGE value="commit 12/03" />
-    <MESSAGE value="commit 13/03" />
-    <MESSAGE value="commit 17/03" />
-    <MESSAGE value="commit 18/03" />
-    <MESSAGE value="commit 19/03" />
-    <MESSAGE value="commit 20/03" />
-    <MESSAGE value="commit 24/03" />
-    <MESSAGE value="commit 26/03" />
-    <MESSAGE value="commit 25/03" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 25/03" />
   </component>
 </project>

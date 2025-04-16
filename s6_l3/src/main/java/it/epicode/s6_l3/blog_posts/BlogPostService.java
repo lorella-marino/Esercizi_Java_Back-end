@@ -20,18 +20,18 @@ public class BlogPostService {
     @Autowired
     private AutoreRepository autoreRepository;
 
-    public CommonResponse create(@Valid BlogPostRequest blogPostRequest) {
+    public BlogPostResponse create(@Valid BlogPostRequest blogPostRequest) {
         BlogPost blogPost = new BlogPost();
         BeanUtils.copyProperties(blogPostRequest, blogPost);
         blogPost.setAutore(autoreRepository.findById(blogPostRequest.getAutoreId()).orElseThrow(() -> new RuntimeException("Autore non trovato")));
         blogPostRepository.save(blogPost);
-        return new CommonResponse(blogPost.getId());
+        return toResponse(blogPost);
     }
 
     public BlogPostResponse toResponse(BlogPost blogPost) {
         BlogPostResponse blogPostResponse = new BlogPostResponse();
         BeanUtils.copyProperties (blogPost, blogPostResponse);
-        blogPostResponse.setAutore(blogPost.getAutore().getNome()+ " " + blogPost.getAutore().getCognome());
+        blogPostResponse.setAutoreId(blogPost.getAutore().getId());
         return blogPostResponse;
     }
 
@@ -45,7 +45,7 @@ public class BlogPostService {
         BlogPostResponse blogPostResponse = new BlogPostResponse();
         BeanUtils.copyProperties(blogPost, blogPostResponse);
 
-        blogPostResponse.setAutore(blogPost.getAutore().getNome() + " " + blogPost.getAutore().getCognome());
+        blogPostResponse.setAutoreId(blogPost.getAutore().getId());
         return blogPostResponse;
     }
 

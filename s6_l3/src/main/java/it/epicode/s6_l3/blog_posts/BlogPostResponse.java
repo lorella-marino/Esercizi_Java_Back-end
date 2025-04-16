@@ -11,6 +11,6 @@ public class BlogPostResponse {
    private Long id;
    private String categoria;
    private String titolo;
-   private String autore;
+   private Long autoreId;
 
 }

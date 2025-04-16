@@ -29,7 +29,7 @@ public class BlogPostController {
 
     @PostMapping
     @ResponseStatus (HttpStatus.CREATED)
-    public CommonResponse create(@RequestBody @Valid BlogPostRequest blogPostRequest) {
+    public BlogPostResponse create(@RequestBody @Valid BlogPostRequest blogPostRequest) {
         return blogPostService.create(blogPostRequest);
     }
 

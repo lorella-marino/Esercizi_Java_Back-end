@@ -16,7 +16,7 @@ public class BlogPostController {
     @Autowired
     private BlogPostService blogPostService;
 
-    @PatchMapping (path = "/{id}/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PatchMapping (path = "/{id}/cover", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public void uploadCover(@PathVariable Long id, @RequestBody MultipartFile file) {
         blogPostService.uploadCover(id, file);
     }

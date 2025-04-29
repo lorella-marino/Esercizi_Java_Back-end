@@ -18,7 +18,6 @@ public class DipendenteRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
         for (int i = 0; i < 10; i++) {
             Dipendente dipendente = new Dipendente();
-            dipendente.setUsername(faker.name().username());
             dipendente.setNome(faker.name().firstName());
             dipendente.setCognome(faker.name().lastName());
             dipendente.setEmail(faker.internet().emailAddress());

@@ -1,14 +1,20 @@
 package it.epicode.s7_l2.dipendenti;
 
 import it.epicode.s7_l2.cloudinary.CloudinaryService;
+import it.epicode.s7_l2.security.auth.app_user.AppUser;
+import it.epicode.s7_l2.security.auth.app_user.Role;
+import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.Valid;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
+import java.util.Set;
 
 @Service
 @Validated
@@ -17,6 +23,8 @@ public class DipendenteService {
     private DipendenteRepository dipendenteRepository;
     @Autowired
     private CloudinaryService cloudinaryService;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public void uploadFotoProfilo(Long id, MultipartFile fotoProfilo) {
         Dipendente dipendente = dipendenteRepository.findById(id)
@@ -29,7 +37,6 @@ public class DipendenteService {
     public DipendenteResponse toResponse(Dipendente dipendente) {
         return new DipendenteResponse(
                 dipendente.getId(),
-                dipendente.getUsername(),
                 dipendente.getNome(),
                 dipendente.getCognome(),
                 dipendente.getEmail(),
@@ -50,7 +57,6 @@ public class DipendenteService {
 
     public DipendenteResponse create(@Valid DipendenteRequest dipendenteRequest) {
         Dipendente dipendente = new Dipendente();
-        dipendente.setUsername(dipendenteRequest.getUsername());
         dipendente.setNome(dipendenteRequest.getNome());
         dipendente.setCognome(dipendenteRequest.getCognome());
         dipendente.setEmail(dipendenteRequest.getEmail());
@@ -58,15 +64,22 @@ public class DipendenteService {
         return toResponse(dipendente);
     }
 
-    public DipendenteResponse update(Long id, DipendenteRequest dipendenteRequest) {
+    // Bcrypto -> protezione della password durante l'update dell'utente
+    public Dipendente update(Long id,  DipendenteRequest request, AppUser utenteLoggato) {
         Dipendente dipendente = dipendenteRepository.findById(id)
-                .orElseThrow(() -> new EntityNotFoundException("Dipendente non trovato"));
-        dipendente.setUsername(dipendenteRequest.getUsername());
-        dipendente.setNome(dipendenteRequest.getNome());
-        dipendente.setCognome(dipendenteRequest.getCognome());
-        dipendente.setEmail(dipendenteRequest.getEmail());
-        dipendenteRepository.save(dipendente);
-        return toResponse(dipendente);
+                .orElseThrow(() -> new EntityNotFoundException("Dipendente non trovato con id: " + id));
+
+        boolean isAdmin = utenteLoggato.getRoles().contains(Role.ROLE_ADMIN);
+
+        if(dipendente.getAppUser().getId() == utenteLoggato.getId() || isAdmin) {
+            BeanUtils.copyProperties(request, dipendente);
+        } else {
+            throw new IllegalArgumentException("Non sei autorizzato a modificare questo dipendente");
+        }
+
+        return dipendenteRepository.save(dipendente);
+
+
     }
 
     public void delete(Long id) {

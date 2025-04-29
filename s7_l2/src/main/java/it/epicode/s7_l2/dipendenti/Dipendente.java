@@ -1,5 +1,6 @@
 package it.epicode.s7_l2.dipendenti;
 
+import it.epicode.s7_l2.security.auth.app_user.AppUser;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,8 +16,10 @@ public class Dipendente {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-    @Column (nullable = false, length = 20)
-    private String username;
+
+    @OneToOne(cascade={CascadeType.REMOVE, CascadeType.PERSIST})
+    private AppUser appUser;
+
     @Column (nullable = false)
     private String nome;
     @Column (nullable = false)

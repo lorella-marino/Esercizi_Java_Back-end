@@ -9,27 +9,27 @@ import org.springframework.stereotype.Component;
 public class ChainRunner implements CommandLineRunner{
     @Override
     public void run(String... args) throws Exception {
-       System.out.println("---- Chain Runner ----");
+        System.out.println("---- Chain Runner ----");
 
-       Generale generale = new Generale();
-       generale.setNome("Generale");
-       generale.setStipendio(5000);
-       generale.setResponsabile(null);
+        Generale generale = new Generale();
+        generale.setNome("Generale");
+        generale.setStipendio(5000);
+        generale.setResponsabile(null);
 
-       Colonnello colonnello = new Colonnello();
-       colonnello.setNome("Colonnello");
-       colonnello.setStipendio(4000);
-       colonnello.setResponsabile(generale);
+        Colonnello colonnello = new Colonnello();
+        colonnello.setNome("Colonnello");
+        colonnello.setStipendio(4000);
+        colonnello.setResponsabile(generale);
 
-       Maggiore maggiore = new Maggiore();
-       maggiore.setNome("Maggiore");
-       maggiore.setStipendio(3000);
-       maggiore.setResponsabile(colonnello);
+        Maggiore maggiore = new Maggiore();
+        maggiore.setNome("Maggiore");
+        maggiore.setStipendio(3000);
+        maggiore.setResponsabile(colonnello);
 
-       Capitano capitano = new Capitano();
-       capitano.setNome("Capitano");
-       capitano.setStipendio(2000);
-       capitano.setResponsabile(maggiore);
+        Capitano capitano = new Capitano();
+        capitano.setNome("Capitano");
+        capitano.setStipendio(2000);
+        capitano.setResponsabile(maggiore);
 
         Tenente tenente = new Tenente();
         tenente.setNome("Tenente");
